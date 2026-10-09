@@ -7,8 +7,8 @@ Responde con tus palabras, en 1-3 líneas. En la defensa te preguntaré lo mismo
 
 **Contraseñas que has usado** (solo porque es un laboratorio; en una empresa, jamás en un fichero):
 
-- Tu usuario:
-- mtorres:
+- Tu usuario: SecureCorp2026
+- mtorres: SecureCorp2026
 
 ---
 
@@ -34,7 +34,7 @@ Email: dcorbacho@securecorp.local
 
 **3. (A4)** ¿Por qué la clave `ldap.key` tiene que ser de `openldap` y tener permisos 600?
 
-Debe ser de openldap porque el demonio LDAP (slapd) se ejecuta bajo ese usuario no privilegiado y necesita poder leer el archivo para iniciar el cifrado TLS. Debe tener permisos 600 por seguridad, la clave privada debe estar protegida para que ningún otro usuario local.
+Debe ser de openldap porque el demonio LDAP se ejecuta bajo ese usuario no privilegiado y necesita poder leer el archivo para iniciar el cifrado TLS. Debe tener permisos 600 por seguridad, la clave privada debe estar protegida para que ningún otro usuario local.
 
 **4. (A4)** ¿Qué valor has puesto en `SLAPD_SERVICES` y por qué?
 
