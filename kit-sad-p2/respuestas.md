@@ -27,7 +27,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.28 seconds
 
 Después de `./lab.sh comprobar`, mira `./lab.sh ver`. ¿Cuántos paquetes lleva el contador de A6? ¿Quién los ha mandado?
 
-Lleva 6 paquetes mandados y los ha enviado la red de la tienda hacia las oficinas.
+Lleva 6 paquetes mandados 360bytes y los ha enviado la red de la tienda hacia las oficinas.
 >
 
 ## Bloque B · La prueba del cifrado
