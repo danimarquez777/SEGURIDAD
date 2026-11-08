@@ -9,11 +9,25 @@ Desde la calle: `./lab.sh cliente` y dentro `nmap -Pn -p 22,80,443,5432,8080 198
 ```text
 (pega aquí la salida de nmap)
 ```
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-11-08 18:57 UTC
+Nmap scan report for sad-p2-fw.sad-p2_calle (198.51.100.254)
+Host is up (0.000067s latency).
+
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+80/tcp   open     http
+443/tcp  open     https
+5432/tcp filtered postgresql
+8080/tcp filtered http-proxy
+MAC Address: C6:FE:D0:C4:0E:4D (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.28 seconds
 
 ## Bloque A · El contador
 
 Después de `./lab.sh comprobar`, mira `./lab.sh ver`. ¿Cuántos paquetes lleva el contador de A6? ¿Quién los ha mandado?
 
+Lleva 6 paquetes mandados y los ha enviado la red de la tienda hacia las oficinas.
 >
 
 ## Bloque B · La prueba del cifrado
