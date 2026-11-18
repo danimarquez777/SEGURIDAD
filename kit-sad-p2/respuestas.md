@@ -56,10 +56,14 @@ En dos líneas: ¿qué se ve por la calle y qué NO se ve?
 
 ## Bloque C · Para la defensa (C4)
 
-Del **mismo ataque** (la inyección a la web): ¿qué ve el vigilante de la red (el IDS) y qué ve el portero de la web? ¿Por
-qué hacen falta los dos?
+Del **mismo ataque** (la inyección a la web): ¿qué ve el vigilante de la red (el IDS) y qué ve el portero de la web? ¿Por qué hacen falta los dos?
 
->
+> 
+Qué ve Suricata: Inspecciona el tráfico a nivel de red/paquetes (IPs, puertos y carga útil sin procesar) que atraviesa el cortafuegos.
+
+Qué ve el WAF: Actúa en la capa de aplicación como proxy inverso delante de la web. Termina la conexión, descifra y normaliza la petición HTTP completa y bloquea activamente el ataque (403 Forbidden) antes de que llegue al servidor web.
+
+¿Por qué hacen falta los dos?: Porque el WAF protege específicamente la aplicación web bloqueando ataques HTTP complejos o cifrados, mientras que Suricata vigila toda la red, detectando escaneos, ataques a otros servicios o movimientos laterales internos y dejando un registro centralizado para auditoría.
 
 ## Bloque D · La nota del servidor (D0 y D4)
 
