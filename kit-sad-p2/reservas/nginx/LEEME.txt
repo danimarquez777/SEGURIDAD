@@ -3,3 +3,4 @@
 
 Los .conf de esta carpeta se cargan dentro de «http» (valen para todas las webs del servidor de reservas).
 Después de cambiar algo:  ./lab.sh nginx
+
