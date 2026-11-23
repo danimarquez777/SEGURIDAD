@@ -73,4 +73,9 @@ Nota del análisis **antes** de bastionar (D0):
 
 Nota **después** (D4). ¿Por qué no llega a 100? ¿Significa que el servidor sigue inseguro? Comenta un aviso que siga saliendo.
 
->
+> 
+Porque Lynis es una herramienta muy exigente que revisa cientos de detalles de todo el sistema operativo.
+
+Para nada. Esa nota es solo una referencia para seguir mejorando.
+
+Por ejemplo, sigue saliendo la sugerencia `HTTP-6710` (añadir HTTPS a los virtual hosts de Nginx). Lynis avisa de que Nginx está sirviendo la web sin cifrado propio.
